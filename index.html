@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js calculator</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="main.js"defer></script>
+    <style>
+       form{
+        width:400px;
+       }
+    </style>
+</head>
+<body>
+
+   <div class="contaner-fluid border p-5">
+    <h1 class="text-center text-danger">Simple javascript calculator</h1>
+     <div class="text-center p-3">
+        <center>
+            <form class=" p-5 git  border shadow rounded">
+                <div class="p-2"> <label for="valueone" class="text-start">Value1: <input type="text" id="valueone" class="form-control"></label></div>
+                <div class="p-2"> <label for="valuetwo" class="text-start">Value2: <input type="text" id="valuetwo" class="form-control"></label></div>
+                <div class="p-5 pt-2 ">
+    
+                    <label for="operation">operation</label>
+    
+                    <select  id="operator" class="form-select"  >
+                        <option value="add">Addition</option>
+                        <option value="mult">Multiplication</option>
+                        <option value="sub">Subtraction</option>
+                        <option value="div">Division</option>
+                    </select>
+    
+                   
+    
+               </div>
+                <div> <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button></div>
+    
+                <!--answer division-->
+    
+                <div class="border rounded text-center text-white  pt-2 mt-3 bg-success">
+                    <p>Your calculated value is: <span id="calculatedValue"></span></p>
+                </div>
+    
+             </form>
+
+       </center>
+        
+     </div>
+   </div>
+    
+</body>
+</html>
